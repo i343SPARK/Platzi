@@ -1,0 +1,7 @@
+use("sample_training")
+
+db.zips.find({city: "CLEVELAND"})
+
+//pop
+// 2369
+// 1244

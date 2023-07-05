@@ -1,0 +1,7 @@
+use("platzi_store")
+db.inventory.find()
+
+use("platzi_store")
+db.survey.find()
+
+// Select with mouse and play the playground
