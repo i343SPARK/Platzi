@@ -17,10 +17,10 @@ The repository is organized into several main branches, reflecting the diverse r
 
 ## Repository Map
 
-- `[Master Branch](https://github.com/i343SPARK/Platzi/tree/master)` - The central hub of my learning achievements, holding all the certificates earned.
-- `[Data-Bases Branch](https://github.com/i343SPARK/Platzi/tree/data-bases)` - A deep dive into database management and development with MongoDB and more.
-- `[Astro Branch](https://github.com/i343SPARK/Platzi/tree/astro)` - Focused on modern web development practices and design principles, showcasing projects that blend functionality with aesthetics.
-- `[Unity Branch (Coming Soon)](https://github.com/i343SPARK/Platzi/tree/unity)` - (Upcoming) Will feature my exploration into game development, with projects ranging from simple 2D puzzles to complex 3D environments.
+- [Master Branch](https://github.com/i343SPARK/Platzi/tree/master) - The central hub of my learning achievements, holding all the certificates earned.
+- [Data-Bases Branch](https://github.com/i343SPARK/Platzi/tree/data-bases) - A deep dive into database management and development with MongoDB and more.
+- [Astro Branch](https://github.com/i343SPARK/Platzi/tree/astro) - Focused on modern web development practices and design principles, showcasing projects that blend functionality with aesthetics.
+- [Unity Branch (Coming Soon)](https://github.com/i343SPARK/Platzi/tree/unity) - (Upcoming) Will feature my exploration into game development, with projects ranging from simple 2D puzzles to complex 3D environments.
 
 
 ## Important Considerations
