@@ -1,6 +1,6 @@
 ---
 title: "Hello JavaScript"
-pubDate: "30-03-2024"
+pubDate: "2024-03-30"
 description: "Hello thisi is my first recommendation"
 image: "https://api.lorem.space/image/game?w=150&h=220"
 tags: ["astro", "JavaScript"]
