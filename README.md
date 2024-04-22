@@ -13,14 +13,14 @@ The repository is organized into several main branches, reflecting the diverse r
 - **Master Branch**: Contains all my certificates that I was earning through Platzi.
 - **Data-Bases Branch**: Includes data bases technologies such as MongoDB, MySQL(Comming Soon), and among others.
 - **Astro Branch**: A section dedicated to Astro principles, and UX/UI design, using technologies like Tailwind for creating engaging visuals.
-- **Unity Branch (Comming Soon)**: Showcases projects built with Unity, focusing on both 2D and 3D game development.
+- **Godot Branch**: Showcases projects built with Godot, focusing on both 2D and 3D game development.
 
 ## Repository Map
 
 - [Master Branch](https://github.com/i343SPARK/Platzi/tree/master) - The central hub of my learning achievements, holding all the certificates earned.
 - [Data-Bases Branch](https://github.com/i343SPARK/Platzi/tree/data-bases) - A deep dive into database management and development with MongoDB and more.
 - [Astro Branch](https://github.com/i343SPARK/Platzi/tree/astro) - Focused on modern web development practices and design principles, showcasing projects that blend functionality with aesthetics.
-- [Unity Branch (Coming Soon)](https://github.com/i343SPARK/Platzi/tree/unity) - (Upcoming) Will feature my exploration into game development, with projects ranging from simple 2D puzzles to complex 3D environments.
+- [Godot Branch](https://github.com/i343SPARK/Platzi/tree/Godot) -  Will feature my exploration into game development, with projects using the power of Godot engine.
 
 
 ## Important Considerations
