@@ -1,0 +1,79 @@
+[gd_scene load_steps=9 format=3 uid="uid://uhis3dl5fjgy"]
+
+[ext_resource type="PackedScene" uid="uid://b5hrhey1gohnm" path="res://player.tscn" id="1_fsrkq"]
+[ext_resource type="Script" path="res://level.gd" id="1_i7wp5"]
+[ext_resource type="PackedScene" uid="uid://11bycn2nhos3" path="res://ball.tscn" id="2_g8heq"]
+[ext_resource type="Script" path="res://Oponente.gd" id="2_jlkur"]
+[ext_resource type="FontFile" uid="uid://de1rdb8se7usa" path="res://PoetsenOne-Regular.ttf" id="4_iwm54"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j1kf8"]
+size = Vector2(1920, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_txqps"]
+size = Vector2(50, 1080)
+
+[sub_resource type="FontVariation" id="FontVariation_gkkht"]
+base_font = ExtResource("4_iwm54")
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_i7wp5")
+
+[node name="ParedSuperior" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ParedSuperior"]
+position = Vector2(960, -25)
+shape = SubResource("RectangleShape2D_j1kf8")
+
+[node name="ParedInferior" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ParedInferior"]
+position = Vector2(960, 1105)
+shape = SubResource("RectangleShape2D_j1kf8")
+
+[node name="ArcoPlayer" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ArcoPlayer"]
+position = Vector2(-25, 540)
+shape = SubResource("RectangleShape2D_txqps")
+
+[node name="ArcoOponente" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ArcoOponente"]
+position = Vector2(1945, 540)
+shape = SubResource("RectangleShape2D_txqps")
+
+[node name="Player" parent="." instance=ExtResource("1_fsrkq")]
+position = Vector2(50, 460)
+
+[node name="Oponente" parent="." instance=ExtResource("1_fsrkq")]
+position = Vector2(1870, 460)
+script = ExtResource("2_jlkur")
+
+[node name="MarcadorPlayer" type="Label" parent="."]
+offset_left = -552.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_fonts/font = SubResource("FontVariation_gkkht")
+theme_override_font_sizes/font_size = 32
+text = "Marcador Player"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarcadorOponente" type="Label" parent="."]
+offset_right = 2374.0
+offset_bottom = 1080.0
+theme_override_fonts/font = SubResource("FontVariation_gkkht")
+theme_override_font_sizes/font_size = 32
+text = "Marcador Oponente"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Ball" parent="." instance=ExtResource("2_g8heq")]
+position = Vector2(934, 574)
+scale = Vector2(0.3, 0.3)
+
+[node name="RestartTimer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="ArcoPlayer" to="." method="_on_arco_player_body_entered"]
+[connection signal="body_entered" from="ArcoOponente" to="." method="_on_arco_oponente_body_entered"]
+[connection signal="timeout" from="RestartTimer" to="Ball" method="_on_restart_timer_timeout"]

@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://11bycn2nhos3"]
+
+[ext_resource type="Script" path="res://ball.gd" id="1_5d7kw"]
+[ext_resource type="Texture2D" uid="uid://kkqcmbjmoqfd" path="res://platzi.png" id="1_82ck5"]
+[ext_resource type="AudioStream" uid="uid://borbfmtufi22s" path="res://SPRTField_Balloon against wall 1 (ID 1825)_BSB.wav" id="3_xgsv1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h2l5s"]
+radius = 120.0
+
+[node name="Ball" type="CharacterBody2D"]
+script = ExtResource("1_5d7kw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_82ck5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_h2l5s")
+
+[node name="AudioCollision" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_xgsv1")
